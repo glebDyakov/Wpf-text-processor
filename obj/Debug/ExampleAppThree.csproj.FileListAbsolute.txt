@@ -1,0 +1,15 @@
+C:\WPF_PROJECTS\ExampleAppThree\bin\Debug\ExampleAppThree.exe.config
+C:\WPF_PROJECTS\ExampleAppThree\bin\Debug\ExampleAppThree.exe
+C:\WPF_PROJECTS\ExampleAppThree\bin\Debug\ExampleAppThree.pdb
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\MainWindow.g.cs
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\App.g.cs
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree_MarkupCompile.cache
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree_MarkupCompile.lref
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\MainWindow.baml
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree.g.resources
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree.Properties.Resources.resources
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree.csproj.GenerateResource.cache
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree.csproj.CoreCompileInputs.cache
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree.exe
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree.pdb
+C:\WPF_PROJECTS\ExampleAppThree\obj\Debug\ExampleAppThree.csprojAssemblyReference.cache

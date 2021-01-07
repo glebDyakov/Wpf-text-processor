@@ -1,0 +1,23 @@
+﻿<Window x:Class="ExampleAppThree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExampleAppThree"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="450" Width="800" ResizeMode="NoResize"
+        Topmost="False" WindowState="Normal" Icon="./Resources/icon.ico">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem x:Name="menuFile" Header="Файл">
+                <MenuItem x:Name="createNewFile" Header="Создать новый файл">
+                    
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="textBox" Margin="0,34,0,1" Width="782">
+            
+        </TextBox>
+    </DockPanel>
+
+</Window>
