@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,40 @@ namespace ExampleAppThree
         {
             InitializeComponent();
 
+        }
+
+        private void ExitProgram_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TimeNewRomanFont_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.FontFamily = new FontFamily("Times New Roman");
+            timeNewRomanFont.IsChecked = false;
+        }
+
+        private void VerdanaFont_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.FontFamily = new FontFamily("Verdana");
+            verdanaFont.IsChecked = false;
+        }
+
+        private void saveFile_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.ShowDialog();
+        }
+
+        private void createNewFile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void openNewFile_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.ShowDialog();
         }
     }
 }

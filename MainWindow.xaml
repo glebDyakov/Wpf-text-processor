@@ -6,15 +6,64 @@
         xmlns:local="clr-namespace:ExampleAppThree"
         mc:Ignorable="d"
         Title="Калькулятор" Height="450" Width="800" ResizeMode="NoResize"
-        Topmost="False" WindowState="Normal" Icon="./Resources/icon.ico">
+        Topmost="False" WindowState="Normal" Icon="./Resources/openFile.ico">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem x:Name="menuFile" Header="Файл">
                 <MenuItem x:Name="createNewFile" Header="Создать новый файл">
+                    <MenuItem.Icon>
+                        <Image Source="./Resources/openFile.ico" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="openNewFile" Header="Открыть новый файл" Click="openNewFile_Click">
+                </MenuItem>
+                <MenuItem x:Name="saveFile" Header="Сохранить файл" Click="saveFile_Click">
+                    <MenuItem.Icon>
+                        <Image Source="./Resources/saveFile.ico" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="exitProgram" Header="Выйти" Click="ExitProgram_Click">
+                    <MenuItem.Icon>
+                        <Image Source="./Resources/cut.ico" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="menuEdit" Header="Редактировать">
+                <MenuItem x:Name="selectFont" Header="Шрифт">
+                    <MenuItem x:Name="timeNewRomanFont" Header="Times New Roman" IsCheckable="True" StaysOpenOnClick="True" Click="TimeNewRomanFont_Click">
+
+                    </MenuItem>
+                    <MenuItem x:Name="verdanaFont" Header="Verdana" IsCheckable="True" StaysOpenOnClick="True" Click="VerdanaFont_Click" >
                     
+                    </MenuItem>
+                    
+                </MenuItem>
+                <Separator />
+                <MenuItem x:Name="copyText" Header="Скопировать" Command="ApplicationCommands.Copy" InputGestureText="Ctrl+C">
+                </MenuItem>
+                <MenuItem x:Name="pasteText" Header="Вставить" Command="ApplicationCommands.Paste" InputGestureText="Ctrl+V">
+                </MenuItem>
+                <MenuItem x:Name="cutText" Header="Вырезать" Command="ApplicationCommands.Cut" InputGestureText="Ctrl+X">
                 </MenuItem>
             </MenuItem>
         </Menu>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button x:Name="btnSave" ToolTip="Сохранить файл" Click="saveFile_Click">
+                    <Image Source="./Resources/saveFile.ico" Width="25" Height="25" />
+                </Button>
+                <Button x:Name="btnOpen" ToolTip="Открыть файл" Click="openNewFile_Click">
+                    <Image Source="./Resources/openFile.ico" Width="25" Height="25" />
+                </Button>
+                <Button x:Name="btnCut" ToolTip="Вырезать" Command="ApplicationCommands.Cut">
+                    <Image Source="./Resources/cut.ico" Width="25" Height="25" />
+                </Button>
+                <Button x:Name="btnPaste" ToolTip="Вставить" Command="ApplicationCommands.Paste">
+                    <Image Source="./Resources/paste.ico" Width="25" Height="25" />
+                </Button>
+
+            </ToolBar>
+        </ToolBarTray>
         <TextBox x:Name="textBox" Margin="0,34,0,1" Width="782">
             
         </TextBox>
