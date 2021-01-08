@@ -10,7 +10,7 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem x:Name="menuFile" Header="Файл">
-                <MenuItem x:Name="createNewFile" Header="Создать новый файл">
+                <MenuItem x:Name="createNewFile" Header="Создать новый файл" Click="createNewFile_Click">
                     <MenuItem.Icon>
                         <Image Source="./Resources/openFile.ico" />
                     </MenuItem.Icon>
@@ -61,10 +61,19 @@
                 <Button x:Name="btnPaste" ToolTip="Вставить" Command="ApplicationCommands.Paste">
                     <Image Source="./Resources/paste.ico" Width="25" Height="25" />
                 </Button>
-
+                <Label>Размер шрифта:</Label>
+                <ComboBox x:Name="selectFontSize" SelectionChanged="selectFontSize_SelectionChanged">
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem IsSelected="True">14</ComboBoxItem>
+                    <ComboBoxItem>16</ComboBoxItem>
+                    <ComboBoxItem>20</ComboBoxItem>
+                    <ComboBoxItem>24</ComboBoxItem>
+                    <ComboBoxItem>32</ComboBoxItem>
+                    <ComboBoxItem>48</ComboBoxItem>
+                </ComboBox>
             </ToolBar>
         </ToolBarTray>
-        <TextBox x:Name="textBox" Margin="0,34,0,1" Width="782">
+        <TextBox x:Name="textBox" Margin="0,34,0,1" Width="782" FontSize="14">
             
         </TextBox>
     </DockPanel>
